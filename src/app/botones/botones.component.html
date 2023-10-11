@@ -1,0 +1,38 @@
+
+<!--
+  curso parte 1 botones dinamicos
+  <div>
+  <button 
+    [disabled]="buttonDisabled"
+    class="btn btn-danger"
+    (click)="textColor = 'text-danger'"
+  >
+    Rojo
+  </button>
+  <button 
+    [disabled]="buttonDisabled"
+    class="btn btn-success mx-2"
+    (click)="textColor = 'text-success'"
+  >
+    Verde
+  </button>
+  <button 
+    [disabled]="buttonDisabled"
+    class="btn btn-primary"
+    (click)="textColor = 'text-primary'"
+  >
+    azul
+  </button>
+</div>
+
+<p [class]="textColor">Texto que va a cambiar de color</p>
+
+<button class="btn btn-secondary" (click)="switchButton()">On/Off</button>
+-->
+
+<div>
+  <button class="btn btn-primary mx-1" (click)="srcImage = 'https://images.pexels.com/photos/14754642/pexels-photo-14754642.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load'">imagen 2</button>
+  <button class="btn btn-secondary" (click)="srcImage = 'https://images.pexels.com/photos/18263099/pexels-photo-18263099/free-photo-of-coche-solitario-por-la-noche-en-el-bosque.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">imagen 3</button>
+</div>
+
+<img [src]="srcImage" width="500px" height="500px" alt="">
